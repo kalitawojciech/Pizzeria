@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace Pizzeria.Models
 {
-    interface IPizzaRepository
+    public interface IPizzaRepository
     {
         IEnumerable<Pizza> GetPizzas();
         Pizza GetPizzaById(int pizzaId);
