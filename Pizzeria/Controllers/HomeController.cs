@@ -19,7 +19,10 @@ namespace Pizzeria.Controllers
         // GET: /<controller>/
         public IActionResult Index()
         {
-            return View();
+            ViewBag.Title = "Pizza overview";
+
+            var pizzas = _pizzaRepository.GetPizzas().OrderBy(p => p.Name);
+            return View(pizzas);
         }
     }
 }

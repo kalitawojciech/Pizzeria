@@ -1,0 +1,19 @@
+﻿@model  IEnumerable<Pizzeria.Models.Pizza>
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width" />
+    </head>
+    <body>
+        <h2>@ViewBag.Title</h2>
+        @foreach(var pizza in Model)
+        {
+            <div>
+                <h2>@pizza.Name</h2>
+                <h3>@pizza.Price.ToString("c")</h3>
+            </div>
+        }
+    </body>
+</html>
