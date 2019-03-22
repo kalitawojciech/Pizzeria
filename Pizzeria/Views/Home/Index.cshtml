@@ -1,7 +1,7 @@
-﻿@model  IEnumerable<Pizzeria.Models.Pizza>
+﻿@model  Pizzeria.ViewModels.HomeViewModel
 
-<h2>@ViewBag.Title</h2>
-@foreach(var pizza in Model)
+<h2>@Model.Title</h2>
+@foreach(var pizza in Model.Pizzas)
 {
     <div>
         <h2>@pizza.Name</h2>
