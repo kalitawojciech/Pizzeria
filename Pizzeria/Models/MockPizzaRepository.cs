@@ -21,7 +21,7 @@ namespace Pizzeria.Models
         {
             _pizzas = new List<Pizza>
             {
-                new Pizza { Id = 1, Name = "Hawaiian Pizza", Price = 23.99M, IsPizzaOfTheWeek = true, ShortDescription = "Pizza", LongDescription = "Hawaiian Pizza"}
+                new Pizza { Id = 1, Name = "Hawaiian Pizza", Price = 23.99M, IsPizzaOfTheWeek = true, ShortDescription = "Pizza", LongDescription = "Hawaiian Pizza", ImageUrl = @"/images/pizza1.jpg"}
             };
         }
 
