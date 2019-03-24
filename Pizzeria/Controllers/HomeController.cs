@@ -28,5 +28,16 @@ namespace Pizzeria.Controllers
             };
             return View(homeViewModel);
         }
+
+        public IActionResult Details(int id)
+        {
+            var pizza = _pizzaRepository.GetPizzaById(id);
+            if(pizza == null)
+            {
+                return NotFound();
+            }
+
+            return View(pizza);
+        }
     }
 }
