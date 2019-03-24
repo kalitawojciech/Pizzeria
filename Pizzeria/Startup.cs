@@ -28,6 +28,7 @@ namespace Pizzeria
                 options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
 
             services.AddTransient<IPizzaRepository, PizzaRepository>();
+            services.AddTransient<IFeedbackRepository, FeedbackRepository>();
             services.AddMvc();
         }
 

@@ -14,5 +14,6 @@ namespace Pizzeria.Models
         }
 
         public DbSet<Pizza> Pizzas { get; set; }
+        public DbSet<Feedback> Feedbacks { get; set; }
     }
 }
