@@ -7,6 +7,6 @@ namespace Pizzeria.Models
 {
     public interface IFeedbackRepository
     {
-        void AddFeedaack(Feedback feedback);
+        void AddFeedback(Feedback feedback);
     }
 }

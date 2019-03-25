@@ -13,7 +13,7 @@ namespace Pizzeria.Models
         {
             _appDbContext = appDbContext;
         }
-        public void AddFeedaack(Feedback feedback)
+        public void AddFeedback(Feedback feedback)
         {
             _appDbContext.Feedbacks.Add(feedback);
             _appDbContext.SaveChanges();
