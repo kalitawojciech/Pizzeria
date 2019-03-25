@@ -23,8 +23,12 @@ namespace Pizzeria.Controllers
         [HttpPost]
         public IActionResult Index(Feedback feedback)
         {
-            _feedbackRepository.AddFeedback(feedback);
-            return RedirectToAction("FeedbackComplete");
+            if (ModelState.IsValid)
+            {
+                _feedbackRepository.AddFeedback(feedback);
+                return RedirectToAction("FeedbackComplete");
+            }
+            return View(feedback);
         }
 
         public IActionResult FeedbackComplete()

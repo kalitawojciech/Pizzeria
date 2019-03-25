@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.AspNetCore.Mvc.ModelBinding;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
@@ -8,6 +9,7 @@ namespace Pizzeria.Models
 {
     public class Feedback
     {
+        [BindNever]
         public int FeedbackId { get; set; }
 
         [Required]
