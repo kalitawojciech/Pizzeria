@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace Pizzeria.Models
 {
-    interface IFeedbackRepository
+    public interface IFeedbackRepository
     {
         void AddFeedaack(Feedback feedback);
     }
